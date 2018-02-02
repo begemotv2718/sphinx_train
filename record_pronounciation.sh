@@ -8,6 +8,7 @@
 OUTFILE_FILES='speech.fileids'
 OUTFILE_PHRASES='speech.transcription'
 WAV_DIRNAME='./wav/'
+mkdir -p $WAV_DIRNAME
 
 
 ASK_FILE_RESULT=''
@@ -73,7 +74,7 @@ do
         rm `get_file_name $ASK_FILE_RESULT`
       fi
     else
-      rec `get_file_name $ASK_FILE_RESULT` rate 16k silence 1 0.1 3% 1 3.0 3%
+      rec `get_file_name $ASK_FILE_RESULT` channels 1 rate 16k silence 1 0.1 3% 1 3.0 3%
     fi
   fi
   sleep 1
