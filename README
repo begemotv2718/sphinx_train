@@ -3,3 +3,5 @@ Scripts to adapt CMU sphinx acoustic model.
 
 Скрипты для адаптации акустических моделей CMU Sphinx. Эксперименты велись с
 русским языком, но для других языков методика аналогична.
+
+apt-get install findutils whiptail sox
